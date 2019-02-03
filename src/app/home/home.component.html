@@ -3,5 +3,9 @@
 </ActionBar>
 
 <GridLayout class="page">
-    
+    <FlexboxLayout flexDirection="column" sdkExampleTitle sdkToggleNavButton>
+        <Label text="都道府県" textWrap="true" class="h3 p-15 text-left"></Label>
+        <ListPicker [items]="divisions" selectedIndex="0" (selectedIndexChange)="selectedIndexChanged($event)" class="p-15"></ListPicker>
+        <Label [text]="'都道府県は' + picked" textWrap="true" class="p-15"></Label>
+    </FlexboxLayout>
 </GridLayout>

@@ -19,9 +19,10 @@ export class HomeComponent implements OnInit {
         }
     }
 
-    selectedIndexChangeed(args) {
+    selectedIndexChanged(args) {
         let picker = <ListPicker>args.object;
         this.picked = this.divisions[picker.selectedIndex];
+        console.log(this.picked);
     }
 
     ngOnInit(): void {
